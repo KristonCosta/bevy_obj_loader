@@ -1,0 +1,23 @@
+[package]
+name = "bevy_obj_loader"
+version = "0.1.0"
+authors = ["kriston"]
+edition = "2018"
+
+[lib]
+name = "bevy_obj_loader"
+path = "src/lib.rs"
+
+[[bin]]
+name = "bevy_obj_preview"
+path = "src/main.rs"
+
+[dependencies]
+tobj = "2.0.4"
+thiserror = "1.0"
+anyhow = "1.0"
+
+[dependencies.bevy]
+git = "https://github.com/bevyengine/bevy.git"
+branch = "main"
+features = ["default", "dynamic"]
